@@ -14,7 +14,8 @@
     --dark-color:#252525;
     --primary-color: #124059;
     --secondary-color: #a36624;
-    --light-pink-color: #e1eeff;
+    --tertiary-color: #7ab4cd;
+    --light-blue-color: #eef5ff;
     --medium-gray-color: #ccc;
 
     /* Font size */
@@ -105,14 +106,17 @@ header.scrolled {
 
 header .navbar {
     display: flex;
-    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-inline: 40px;
     align-items: center;
     justify-content: space-between;
 }
 
 .navbar .nav-logo .logo-text {
-    color: var(--light-pink-color);
-    width: 100px;
+    color: var(--light-blue-color);
+    /* padding-left: 20px; */ 
+    width: 90px;
     height: auto;
 }
 
@@ -123,14 +127,14 @@ header .navbar {
 
 .navbar .nav-menu .nav-link {
     padding: 10px 18px;
-    color: var(--light-pink-color);
+    color: var(--light-blue-color);
     font-size: var(--font-size-m);
     border-radius: var(--border-radius-m);
     transition: 0.3s ease;
 }
 
 .navbar .nav-menu .nav-link:hover {
-    background: lightblue;
+    background: var(--tertiary-color);
     color: var(--dark-color);
 }
 
@@ -150,7 +154,7 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: lightblue;
+    background: var(--tertiary-color);
 }
 
 .home::before {
@@ -174,7 +178,7 @@ section {
 .home .content {
     position: relative;
     z-index: 888;
-    color: var(--light-pink-color);
+    color: var(--light-blue-color);
     width: 70%;
     margin-top: 50px;
     display: none;
@@ -218,8 +222,8 @@ section {
 }
 
 .home .content a:hover {
-    color: var(--light-pink-color);
-    border-color: var(--light-pink-color);
+    color: var(--light-blue-color);
+    border-color: var(--light-blue-color);
     background: transparent;
 }
 
@@ -246,7 +250,7 @@ section {
 .slider-navigation .nav-btn {
     width: 12px;
     height: 12px;
-    background: var(--light-pink-color);
+    background: var(--light-blue-color);
     border-radius: var(--border-radius-circle);
     cursor: pointer;
     box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
@@ -254,7 +258,7 @@ section {
 }
 
 .slider-navigation .nav-btn.active {
-    background: lightblue;
+    background: var(--tertiary-color);
 }
 
 .slider-navigation .nav-btn:not(:last-child) {
@@ -280,7 +284,7 @@ section {
 /* About section styling */
 .about-section {
     padding: 120px 0;
-    background: var(--light-pink-color);
+    background: var(--light-blue-color);
 }
 
 .about-section .section-content {
@@ -480,7 +484,7 @@ section {
     }
 
     .navbar #menu-open-button {
-        color: var(--light-pink-color);
+        color: var(--light-blue-color);
     }
 
     .navbar .nav-menu {
@@ -494,7 +498,7 @@ section {
         flex-direction: column;
         align-items: center;
         padding-top: 100px;
-        background: var(--light-pink-color);
+        background: var(--light-blue-color);
         transition: left 0.2s ease;
         z-index: 1000;
     }
